@@ -1,0 +1,256 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Chat = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local MessageTextBox = Instance.new("TextBox")
+local UICorner = Instance.new("UICorner")
+local Send = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local PremaidMessages = Instance.new("ScrollingFrame")
+local UICorner_3 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local Message1 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Message2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Message3 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+
+--Properties:
+
+Chat.Name = "Chat"
+Chat.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Chat.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Chat.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Chat
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Size = UDim2.new(1, 0, 1, 0)
+
+MessageTextBox.Name = "MessageTextBox"
+MessageTextBox.Parent = MainFrame
+MessageTextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MessageTextBox.BackgroundTransparency = 0.500
+MessageTextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MessageTextBox.BorderSizePixel = 0
+MessageTextBox.Position = UDim2.new(0.322187781, 0, 0.650951564, 0)
+MessageTextBox.Size = UDim2.new(0, 319, 0, 62)
+MessageTextBox.ClearTextOnFocus = false
+MessageTextBox.Font = Enum.Font.SourceSans
+MessageTextBox.MultiLine = true
+MessageTextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+MessageTextBox.Text = ""
+MessageTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+MessageTextBox.TextScaled = true
+MessageTextBox.TextSize = 14.000
+MessageTextBox.TextWrapped = true
+
+UICorner.Parent = MessageTextBox
+
+Send.Name = "Send"
+Send.Parent = MainFrame
+Send.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Send.BackgroundTransparency = 0.500
+Send.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Send.BorderSizePixel = 0
+Send.Position = UDim2.new(0.323294938, 0, 0.796399772, 0)
+Send.Size = UDim2.new(0, 318, 0, 73)
+Send.Font = Enum.Font.GothamBold
+Send.Text = "Send"
+Send.TextColor3 = Color3.fromRGB(255, 255, 255)
+Send.TextScaled = true
+Send.TextSize = 14.000
+Send.TextWrapped = true
+
+UICorner_2.Parent = Send
+
+PremaidMessages.Name = "PremaidMessages"
+PremaidMessages.Parent = MainFrame
+PremaidMessages.Active = true
+PremaidMessages.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PremaidMessages.BackgroundTransparency = 0.500
+PremaidMessages.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PremaidMessages.BorderSizePixel = 0
+PremaidMessages.Position = UDim2.new(0.0121789193, 0, 0.650951564, 0)
+PremaidMessages.Size = UDim2.new(0, 258, 0, 140)
+
+UICorner_3.Parent = PremaidMessages
+
+UIListLayout.Parent = PremaidMessages
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 5)
+
+Message1.Name = "Message1"
+Message1.Parent = PremaidMessages
+Message1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Message1.BackgroundTransparency = 0.500
+Message1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Message1.BorderSizePixel = 0
+Message1.Position = UDim2.new(0.0484496132, 0, 2.17982702e-07, 0)
+Message1.Size = UDim2.new(0, 223, 0, 51)
+Message1.Font = Enum.Font.GothamBold
+Message1.Text = "i fucking hate niggers"
+Message1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Message1.TextScaled = true
+Message1.TextSize = 14.000
+Message1.TextWrapped = true
+
+UICorner_4.Parent = Message1
+
+Message2.Name = "Message2"
+Message2.Parent = PremaidMessages
+Message2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Message2.BackgroundTransparency = 0.500
+Message2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Message2.BorderSizePixel = 0
+Message2.Position = UDim2.new(0.0484496132, 0, 2.17982702e-07, 0)
+Message2.Size = UDim2.new(0, 223, 0, 51)
+Message2.Font = Enum.Font.GothamBold
+Message2.Text = "get faded's bypasser at https://discord.gg/GXXtfYdH"
+Message2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Message2.TextScaled = true
+Message2.TextSize = 14.000
+Message2.TextWrapped = true
+
+UICorner_5.Parent = Message2
+
+Message3.Name = "Message3"
+Message3.Parent = PremaidMessages
+Message3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Message3.BackgroundTransparency = 0.500
+Message3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Message3.BorderSizePixel = 0
+Message3.Position = UDim2.new(0.0484496132, 0, 2.17982702e-07, 0)
+Message3.Size = UDim2.new(0, 223, 0, 51)
+Message3.Font = Enum.Font.GothamBold
+Message3.Text = "shut up slut"
+Message3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Message3.TextScaled = true
+Message3.TextSize = 14.000
+Message3.TextWrapped = true
+
+UICorner_6.Parent = Message3
+
+-- Scripts:
+
+local function ECLVS_fake_script() -- Send.MainScript 
+	local script = Instance.new('LocalScript', Send)
+
+	local button = Send
+	local textBox = MessageTextBox
+	
+	-- Correct mappings for distinct lowercase and uppercase letters
+	local charMapping = {
+		a = "ấ", A = "Ặ",
+		b = "ḅ", B = "Ḇ",
+		c = "ḉ", C = "Ȼ",
+		d = "ḑ", D = "Ḍ",
+		e = "ḛ", E = "Ệ",
+		f = "ḟ", F = "Ḟ",
+		g = "ḡ", G = "Ḡ",
+		h = "ḧ", H = "H",
+		i = "ị", I = "ḯ",
+		j = "ʝ", J = "ʆ",
+		k = "ḳ", K = "Ḵ",
+		l = "Ӏ", L = "Ḷ",
+		m = "ṃ", M = "Ṃ",
+		n = "ṋ", N = "Ṇ",
+		o = "ồ", O = "Ṍ",
+		p = "ṗ", P = "Ṗ",
+		q = "ʠ", Q = "Ꝗ",
+		r = "ṟ", R = "Ṝ",
+		s = "ṧ", S = "Ṩ",
+		t = "ṫ", T = "Ṯ",
+		u = "ụ", U = "Ṳ",
+		v = "ṿ", V = "Ṿ",
+		w = "ẁ", W = "Ẃ",
+		x = "ẍ", X = "Ẍ",
+		y = "ỵ", Y = "Ỵ",
+		z = "ẕ", Z = "Ẕ",
+		[":"] = "ː",
+		["."] = ".",
+		["/"] = "⁄",
+		[" "] = " " -- Keep spaces as they are
+	}
+	
+	button.MouseButton1Up:Connect(function()
+		local inputText = textBox.Text
+		local transformedText = ""
+	
+		-- Check if "discord" exists in the text (case-insensitive)
+		if string.find(string.lower(inputText), "discord") then
+			for i = 1, #inputText do
+				local char = inputText:sub(i, i)
+	
+				-- Replace "i" with "і" in the presence of "discord"
+				if char == "i" then
+					transformedText = transformedText .. "і"
+				else
+					transformedText = transformedText .. (charMapping[char] or char)
+				end
+			end
+	
+			local textChatService = game:GetService("TextChatService")
+			local textChannel = textChatService:FindFirstChild("TextChannels").RBXGeneral
+	
+			textChannel:SendAsync(transformedText)
+		else
+			local inputText = textBox.Text
+			local transformedText = ""
+	
+			for i = 1, #inputText do
+				local char = inputText:sub(i, i)
+				transformedText = transformedText .. (charMapping[char] or char)
+			end
+	
+			local textchatservice = game:GetService("TextChatService").TextChannels.RBXGeneral
+			textchatservice:SendAsync(transformedText)
+		end
+	end)
+	
+end
+coroutine.wrap(ECLVS_fake_script)()
+local function GZWRB_fake_script() -- Message1.MainScript 
+	local script = Instance.new('LocalScript', Message1)
+
+	local button = Message1
+	
+	button.MouseButton1Up:Connect(function()
+	local textchatservice = game:GetService("TextChatService").TextChannels.RBXGeneral
+	textchatservice:SendAsync("ị ḟụḉḳịṋḡ ḧấṫḛ ṋịḡḡḛṟṧ")
+	end)
+	
+end
+coroutine.wrap(GZWRB_fake_script)()
+local function YYNNJOK_fake_script() -- Message2.MainScript 
+	local script = Instance.new('LocalScript', Message2)
+
+	local button = Message2
+	
+	button.MouseButton1Up:Connect(function()
+	local textchatservice = game:GetService("TextChatService").TextChannels.RBXGeneral
+		textchatservice:SendAsync("ḡḛṫ ḟấḑḛḑ'ṧ ḅỵṗấṧṧḛṟ ấṫ ḧṫṫṗṧː⁄⁄ḑịṧḉồṟḑ.ḡḡ⁄ḠẌẌṫḟỴḑH")
+	end)
+	
+end
+coroutine.wrap(YYNNJOK_fake_script)()
+local function FCOXS_fake_script() -- Message3.MainScript 
+	local script = Instance.new('LocalScript', Message3)
+
+	local button = Message3
+	
+	button.MouseButton1Up:Connect(function()
+	local textchatservice = game:GetService("TextChatService").TextChannels.RBXGeneral
+		textchatservice:SendAsync("ṧḧụṫ ụṗ ṧḶụṫ")
+	end)
+	
+end
+coroutine.wrap(FCOXS_fake_script)()
